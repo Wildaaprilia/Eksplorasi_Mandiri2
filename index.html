@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Tebak Angka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Permainan Tebak Angka</h1>
+    </header>
+    <main>
+        <section id="game-section">
+            <h2>Tebak angka antara 1 sampai 100</h2>
+            <form id="guess-form">
+                <label for="guess-input">Masukkan tebakan Anda:</label>
+                <input type="number" id="guess-input" name="guess-input" min="1" max="100" required>
+                <button type="button" onclick="checkGuess()">Tebak</button>
+            </form>
+            <div id="game-result"></div>
+            <div id="previous-guesses"></div>
+        </section>
+    </main>
+    <footer>
+    <script src="script.js"></script>
+</body>
+</html>
